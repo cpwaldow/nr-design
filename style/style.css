@@ -1,0 +1,46 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+header {
+  width: 100%;
+  background-color: #000;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  max-width: 60%;
+}
+
+header .header_menu {
+  text-align: right;
+  margin-top: 20px;
+}
+
+header .header_menu ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+header .header_menu ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+header .header_menu ul li a:hover {
+  color: #fec63e;
+}
+
+header .header_menu ul li a:active {
+  color: #fec63e;
+}
+/*# sourceMappingURL=style.css.map */
