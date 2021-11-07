@@ -21,6 +21,13 @@ $yellow: #fec63e;
   }
 }
 
+.btn-preto {
+  &:hover {
+    color: #000;
+    border-color: #000;
+  }
+}
+
 header {
   width: 100%;
   background-color: #000;
@@ -103,4 +110,130 @@ header {
       letter-spacing: 0.1em;
     }
   }
+}
+
+.produtos {
+  padding-top: 60px;
+  text-align: center;
+
+  .produtos_icone {
+    background-color: #000;
+    padding: 20px;
+
+    .icone {
+      color: #fff;
+      font-size: 80px;
+    }
+  }
+
+  .subtitulo {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1rem;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #000;
+      margin: 8px auto;
+    }
+  }
+
+  .produtos_lista {
+    li {
+      background-color: $yellow;
+
+      h3 {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 60px;
+          height: 3px;
+          background-color: #000;
+          margin: 2px auto;
+        }
+      }
+
+      p {
+        padding: 10px 20px 20px 20px;
+      }
+    }
+  }
+
+  .cta {
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+/* JAVASCRIP */
+
+.js [data-slide] {
+  position: relative;
+}
+[data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+[data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 50%;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+  background: $yellow;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
 }

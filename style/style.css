@@ -19,6 +19,11 @@
   border-color: #fff;
 }
 
+.btn-preto:hover {
+  color: #000;
+  border-color: #000;
+}
+
 header {
   width: 100%;
   background-color: #000;
@@ -102,5 +107,136 @@ header .header_menu ul li a:active {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.1em;
+}
+
+.produtos {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.produtos .produtos_icone {
+  background-color: #000;
+  padding: 20px;
+}
+
+.produtos .produtos_icone .icone {
+  color: #fff;
+  font-size: 80px;
+}
+
+.produtos .subtitulo {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.produtos .subtitulo::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 8px auto;
+}
+
+.produtos .produtos_lista li {
+  background-color: #fec63e;
+}
+
+.produtos .produtos_lista li h3 {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.produtos .produtos_lista li h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 2px auto;
+}
+
+.produtos .produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos .cta {
+  text-align: center;
+  padding-top: 40px;
+  clear: both;
+}
+
+.produtos .cta p {
+  padding-bottom: 20px;
+}
+
+/* JAVASCRIP */
+.js [data-slide] {
+  position: relative;
+}
+
+[data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+
+[data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 50%;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  -webkit-transform: translate3d(0, -20px, 0);
+          transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: opacity 800ms, -webkit-transform 800ms;
+  transition: opacity 800ms, transform 800ms;
+  transition: opacity 800ms, transform 800ms, -webkit-transform 800ms;
 }
 /*# sourceMappingURL=style.css.map */
