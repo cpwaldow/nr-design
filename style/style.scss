@@ -114,6 +114,31 @@ header {
   }
 }
 
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #fff;
+      margin: 10px auto;
+    }
+  }
+}
+
 .introducao {
   width: 100%;
   height: 380px;
@@ -241,14 +266,20 @@ header {
 .quebra {
   width: 100%;
   height: 220px;
-  background: url(../images/bg-footer.jpg) no-repeat center;
+  background: url(../images/nath-background.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   padding-top: 40px;
 
   .quote-externo {
-    max-width: 400px;
+    padding: 10px 0;
+    max-width: 450px;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.767);
+    p {
+      font-weight: bolder !important;
+      margin-bottom: 6px;
+    }
   }
 }
 
@@ -303,6 +334,7 @@ header {
             color: #000;
             &:hover {
               border-color: #000;
+              color: $yellow;
             }
           }
         }
