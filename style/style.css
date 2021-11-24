@@ -17,11 +17,15 @@
 .btn:hover {
   color: #fff;
   border-color: #fff;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .btn-preto:hover {
   color: #000;
   border-color: #000;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .subtitulo {
@@ -103,6 +107,8 @@ header .header_menu ul li a {
 
 header .header_menu ul li a:hover {
   color: #fec63e;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 header .header_menu ul li a:active {
@@ -334,6 +340,8 @@ header .header_menu ul li a .menu-ativo {
 .footer .footer_redes ul li a i:hover {
   border-color: #000;
   color: #fec63e;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .copy {
