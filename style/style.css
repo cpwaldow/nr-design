@@ -259,6 +259,22 @@ header .header_menu ul li a .menu-ativo {
   margin-top: 20px;
 }
 
+.portifolio .portifolio_lista #aurora {
+  width: 60%;
+  margin-left: 80px;
+}
+
+.portifolio .portifolio_lista #aurora-detalhe {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 60%;
+  margin-left: 200px;
+}
+
+.portifolio .portifolio_lista #lobo-guara {
+  width: 85%;
+}
+
 .portifolio .cta {
   text-align: center;
   margin-top: 26px;

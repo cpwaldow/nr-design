@@ -255,6 +255,21 @@ header {
     li:last-child {
       margin-top: 20px;
     }
+
+    #aurora {
+      width: 60%;
+      margin-left: 80px;
+    }
+
+    #aurora-detalhe {
+      transform: rotate(90deg);
+      width: 60%;
+      margin-left: 200px;
+    }
+
+    #lobo-guara {
+      width: 85%;
+    }
   }
   .cta {
     text-align: center;

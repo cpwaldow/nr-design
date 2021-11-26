@@ -71,6 +71,11 @@
     margin: 5px;
   }
 
+  #aurora-detalhe {
+    width: 80% !important;
+    margin-left: 39px !important;
+  }
+
   .header_menu ul li a {
     border: 4px solid #000;
     display: block;
