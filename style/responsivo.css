@@ -87,7 +87,7 @@
   /* INTRODUÇÃO */
 
   .introducao {
-    margin-top: 0;
+    margin-top: -190px;
     padding-top: 40px;
     background: url('../img/bg-mobile.jpg') no-repeat center;
     background-size: cover;
